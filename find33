@@ -1,0 +1,30 @@
+def has_33(nums):
+    
+    ans = False
+    b = len(nums)
+    z = 1
+    
+    for i in nums:
+        
+        if i == 3:
+            
+            if(z!=b):
+                if (nums[z]==3):
+                    ans = True
+                    j = 2
+                    return ans
+                    break
+                else:
+                    
+                    z=z+1                   
+                    continue
+            else:
+                
+                return False
+                break
+        if i!=3 and z==b:
+            return False
+        
+        
+        z=z+1               
+                       
